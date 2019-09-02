@@ -1,0 +1,88 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+.clear{
+    clear:both;
+}
+
+header{
+    min-height: 10vh;
+    background: rgb(187, 177, 177);
+    padding: 0%;
+}
+
+header h2{
+    font-size: 2rem;
+    color: rgb(196, 52, 52)
+}
+#menuButton{
+    font-size: 55px;
+    cursor: pointer;
+    user-select: none;
+    float:right;
+}
+header nav ul li{
+    list-style-type: none;
+    width: 100%;
+    padding:1%;
+    background: #303030;
+    font-size: 1.4rem;
+}
+header nav ul li a{
+    color: #eee;
+    text-decoration: none;
+
+}
+
+.hidden{
+display:none;
+}
+
+main{
+    padding:1%;
+    min-height: 70vh;
+}
+
+.mainContent{
+    min-height:10vh;
+    border:1px solid blue;
+    width:100%;
+}
+
+footer{
+    min-height:6vh;
+    background: #303030;
+    color: wheat;
+    text-align: center;
+}
+
+@media(min-width:600px){
+
+    #menuButton{
+        display: none;
+    }
+    .hidden{
+        display: block;
+    }
+
+    ul{
+        display:flex;
+    }
+    main{
+        display:grid;
+        grid-gap:2px;
+        grid-template-areas:
+            'one one one two two two'
+            'one one one three four five';
+    }
+
+    .one{ grid-area: one;}
+    .two{ grid-area: two;}
+    .three{ grid-area: three;}
+    .four{ grid-area: four;}
+    .five{ grid-area: five;}
+}
