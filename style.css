@@ -19,12 +19,14 @@ header h2{
     font-size: 2rem;
     color: rgb(196, 52, 52)
 }
+
 #menuButton{
     font-size: 55px;
     cursor: pointer;
     user-select: none;
     float:right;
 }
+
 header nav ul li{
     list-style-type: none;
     width: 100%;
@@ -32,6 +34,7 @@ header nav ul li{
     background: #303030;
     font-size: 1.4rem;
 }
+
 header nav ul li a{
     color: #eee;
     text-decoration: none;
@@ -72,12 +75,13 @@ footer{
     ul{
         display:flex;
     }
+
     main{
         display:grid;
         grid-gap:2px;
         grid-template-areas:
             'one one one two two two'
-            'one one one three four five';
+            'three three four four five five';
     }
 
     .one{ grid-area: one;}
