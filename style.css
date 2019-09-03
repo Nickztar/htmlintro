@@ -76,17 +76,21 @@ footer{
         display:flex;
     }
 
-    main{
-        display:grid;
-        grid-gap:2px;
-        grid-template-areas:
-            'one one one two two two'
-            'three three four four five five';
-    }
+    @supports(display:grid)
+    {
+        main
+        {
+            display:grid;
+            grid-gap:2px;
+            grid-template-areas:
+                'one one one two two two'
+                'three three four four five five';
+        }
 
-    .one{ grid-area: one;}
-    .two{ grid-area: two;}
-    .three{ grid-area: three;}
-    .four{ grid-area: four;}
-    .five{ grid-area: five;}
+        .one{ grid-area: one;}
+        .two{ grid-area: two;}
+        .three{ grid-area: three;}
+        .four{ grid-area: four;}
+        .five{ grid-area: five;}
+    }
 }
